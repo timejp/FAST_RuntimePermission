@@ -40,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
         if(requestCode == REQ_CODE) {
             if(grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 loadData();
+            } else {
+                Toast.makeText(this, "권한을 허용하지 않으면 프로그램을 실행 할 수 없습니다.", Toast.LENGTH_SHORT).show();
+                finish();
             }
         }
     }
