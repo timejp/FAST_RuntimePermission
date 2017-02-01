@@ -1,7 +1,6 @@
 package com.timejh.runtimepermission;
 
 import android.Manifest;
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -64,7 +63,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 stringBuffer.append(number + '\n');
             }
             String strnumbers = stringBuffer.substring(0, stringBuffer.length() - 1).toString();
-
             holder.tv_num.setText(strnumbers);
         } else {
             holder.tv_num.setText("");
